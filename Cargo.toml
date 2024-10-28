@@ -1,0 +1,17 @@
+[package]
+name = "font-finder"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A rust library to find installed fonts"
+repository = "https://code.tinted.dev/tinted/font-finder-rs"
+homepage = "https://github.com/tinted-software/font-finder-rs"
+
+[dependencies]
+fontconfig = { version = "0.9.0", optional = true }
+thiserror = "1.0.65"
+walkdir = "2.5.0"
+
+[features]
+default = ["fontconfig"]
+fontconfig = ["dep:fontconfig"]

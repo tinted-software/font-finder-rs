@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "config:best-practices",
+    "group:allNonMajor"
+  ],
+  "forkProcessing": "enabled",
+  "dependencyDashboard": true,
+  "schedule": [
+    "every weekend"
+  ]
+}
